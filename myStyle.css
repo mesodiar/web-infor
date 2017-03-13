@@ -43,7 +43,7 @@ h3{
     font-size: 25px;
     text-align: center;
 }
-p{
+p, input {
   font-family: 'Roboto Slab';
   font-size: 16px;
   text-align: center;
@@ -66,18 +66,55 @@ footer {
   height: auto;
   border: 1px solid black;
 }
+.article-aside {
+  float: left;
+  margin: 30px;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+.article-left-aside {
+  float: left;
+  margin: 30px;
+  padding: 15px;
+  width: 300px;
+  height: auto;
+  border: 1px solid black;
+
+}
 .article img {
   width: 100%;
 }
+.article-aside img {
+  width: 30%;
+  
+}
+.article-left-aside img{
+  width: 40%;
+}
 .container {
+  width: 100%;
+}
+.subcontainer {
   width: 100%;
 }
 .row {
   width: 100%;
   margin: 0 auto;
 }
+.col-3{
+  width: 20%;
+  float: left;
+}
 .col-4{
   width: 26%;
+}
+.col-9{
+  width: 65%;
+}
+.space{
+  padding: 50px 90px;
 }
 section,
 aside {
@@ -120,10 +157,14 @@ aside {
 }
 .header{
     background-image: url("header_navbar.jpg");
-    min-height: 200px;
+    min-height: 150px;
     background-attachment: fixed;
     background-repeat: no-repeat;
 
+}
+.mini-image {
+  width: 7%;
+  height: 5%;
 }
 ul {
     list-style-type: none;
