@@ -3,18 +3,12 @@
   h1 {
     color: #900C3F;
   }
-
-  .desc:after {
-    content:" In fact, it's between 500px and 600px wide.";
-  }
 }
 @media (max-width: 601px) {
   h1 {
     color: white ;
   }
 }
-
-
 body {
   margin: 0px
 }
@@ -32,7 +26,7 @@ h1 {
     font-size: 60px;
     text-align: center;
 }
-h2{
+h2 {
     font-family: 'Merriweather';
     font-size: 30px;
     text-align: center;
@@ -42,6 +36,7 @@ h3{
     font-size: 25px;
     text-align: center;
 }
+
 p, input {
   font-family: 'Roboto Slab';
   font-size: 16px;
@@ -65,7 +60,7 @@ footer {
   height: auto;
   border: 1px solid black;
 }
-.article-aside {
+.article-right-aside {
   float: left;
   margin: 30px 0px 0px;
   padding: 15px;
@@ -85,9 +80,8 @@ footer {
 .article img {
   width: 100%;
 }
-.article-aside img {
+.article-right-aside img {
   width: 40%;
-
 }
 .article-left-aside img{
   width: 40%;
@@ -128,6 +122,13 @@ aside {
   width: 40%;
 }
 .subheader {
+  font-family: 'Dancing Script';
+  font-size: 40px;
+  text-align: center;
+  padding: 15px 30px;
+  color: #239B56;
+}
+.subheader2 {
   font-family: 'Merriweather';
   font-size: 40px;
   text-align: center;
@@ -136,7 +137,7 @@ aside {
 }
 .parallax {
     /* The image used */
-    background-image: url("jay-wennington-2065.jpg");
+    background-image: url("images/jay-wennington-2065.jpg");
 
     /* Set a specific height */
     height: 600px;
@@ -149,7 +150,7 @@ aside {
 }
 .bodyimage {
     /* The image used */
-    background-image: url("bodyabout.jpg");
+    background-image: url("images/bodyabout.jpg");
 
     /* Set a specific height */
     height: 600px;
@@ -160,21 +161,11 @@ aside {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.index-header{
-    background-image: url("header_navbar.jpg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
-}
-.header{
-    background-image: url("header_navbar.jpg");
-    min-height: 150px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
-}
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+ }
 .mini-image {
   width: 7%;
   height: 5%;
