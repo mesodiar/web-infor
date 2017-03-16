@@ -57,7 +57,7 @@ footer {
   margin: 30px;
   padding: 15px;
   width: 300px;
-  height: auto;
+  min-height: 570px;
   border: 1px solid black;
 }
 .article-right-aside {
@@ -81,10 +81,10 @@ footer {
   width: 100%;
 }
 .article-right-aside img {
-  width: 40%;
+  width: 45%;
 }
 .article-left-aside img{
-  width: 40%;
+  width: 65%;
 }
 .container {
   width: 100%;
