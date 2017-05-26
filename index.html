@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<link rel="stylesheet" type = "text/css" href = "myStyle.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:bold,bolditalic,blackitalic|Roboto+Slab|Dancing+Script|Rancho&effect=anaglyph|shadow-multiple">
+  <link rel="stylesheet" type = "text/css" href = "myStyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:bold,bolditalic,blackitalic|Roboto+Slab|Dancing+Script|Rancho&effect=anaglyph|shadow-multiple">
 </head>
 <body style="background-color:white;" padding-top: 51px;>
+
   <div style="background-image: url(images/pizza.jpg); min-height:400px; background-position:center">
     <ul>
       <li><a href="index.html" style="float: left">Home</a></li>
@@ -18,7 +19,11 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-4 article">
+       <p><button class="button" style="vertical-align:middle" onclick="newSubscribe()"><span>Subscribe </span></button></p>
+      <p id="demo"></p>
+    </div>
+    <div class="row">
+      <div class="col-4 article" onmouseover="style.color='#e24a0d'" onmouseout="style.color='black'">
         <a href="content_4.html">
           <h3>Union Square Cafe</h3>
           <img src="images/union-1.jpg">
@@ -29,7 +34,7 @@
         </a>
       </div>
 
-      <div class="col-4 article">
+      <div class="col-4 article" onmouseover="style.color='#e24a0d'" onmouseout="style.color='black'">
         <a href="content_5.html">
           <h3>Massoni</h3>
           <img src="images/massoni.jpg">
@@ -42,7 +47,7 @@
         </a>
       </div>
 
-      <div class="col-4 article">
+      <div class="col-4 article" onmouseover="style.color='#e24a0d'" onmouseout="style.color='black'">
         <a href="content_6.html">
           <h3>White Gold Butchers</h3>
           <img src="images/butcher.jpg">
@@ -59,12 +64,31 @@
       <div class="parallax"></div>
       <p class="subheader2">
         Your ultimate guide to restaurants </p>
-      <p class="subheader2" style="color:#B2BABB">The best restaurants and eateries in the city,<br>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/butcher.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/under50.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/union-1.jpg" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
+      <p class="subheader2" onmouseover="style.color='#0ce2c2'" onmouseout="style.color='#B2BABB'">The best restaurants and eateries in the city,<br>
         from casual to fine dining
       </p>
     </div>
     <div class="row">
-      <div class="col-4 article">
+      <div class="col-4 article" onmouseover="style.color='#e24a0d'" onmouseout="style.color='black'">
         <a href="content_1.html">
           <h3>The best restaurants near the High Line</h3>
           <img src="images/hamburger.jpg">
@@ -76,7 +100,7 @@
         </a>
       </div>
 
-      <div class="col-4 article">
+      <div class="col-4 article" onmouseover="style.color='#e24a0d'" onmouseout="style.color='black'">
         <a href="content_2.html">
           <h3>How to eat at NYC’s best restaurants for under $50</h3>
           <img src="images/under50.jpg">
@@ -88,7 +112,7 @@
         </a>
       </div>
 
-      <div class="col-4 article">
+      <div class="col-4 article" onmouseover="style.color='#e24a0d'" onmouseout="style.color='black'">
         <a href="content_3.html">
           <h3>The best New York delis</h3>
           <img src="images/blue.jpg">
@@ -109,6 +133,6 @@
     <a href="#"><i class="fa fa-flickr" style="font-size:36px;color:white"></i></a>
     <a href="#"><i class="fa fa-linkedin" style="font-size:36px;color:white"></i></a>
   </footer>
-
+  <script src="myscripts.js"></script>
 </body>
 </html>
